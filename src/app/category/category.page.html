@@ -9,7 +9,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-segment (ionChange)="segmentChanged($event)" value="list">
+  <ion-segment (ionChange)="segmentChanged($event)" value="vegetables">
     <ion-segment-button value="vegetables">
       <ion-label>
         Vegetables
@@ -34,15 +34,12 @@
   <div class="animate__animated animate__slideInUp animate__fast"  *ngIf="segment === 'vegetables'">
    <h3>Vegetables Section</h3>
 </div>
-
   <div class="animate__animated animate__slideInUp animate__fast" *ngIf="segment === 'fruits'">
   <h3>Fruits Section</h3>
   </div>
-
   <div class="animate__animated animate__slideInUp animate__fast"  *ngIf="segment === 'dairy'">
     <h3>Dairy Section</h3>
- </div>
- 
+ </div> 
    <div class="animate__animated animate__slideInUp animate__fast" *ngIf="segment === 'bakery'">
    <h3>Bakery Section</h3>
    </div>

@@ -3,43 +3,35 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
 
-const routes: Routes = [  
+const routes: Routes = [
   {
     path: 'tabs',
     component: TabsPage,
-    children: [
+    children: [      
       {
         path: '',
         redirectTo: '/login',
         pathMatch: 'full'
       },
       {
-        path: 'login',
-        loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
-      },
-      {
-        path: 'onboarding',
-        loadChildren: () => import('../onboarding/onboarding.module').then( m => m.OnboardingPageModule)
-      },
-      {
         path: 'home',
-        loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
-      }, 
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
       {
         path: 'category',
-        loadChildren: () => import('../category/category.module').then( m => m.CategoryPageModule)
+        loadChildren: () => import('../category/category.module').then(m => m.CategoryPageModule)
       },
       {
         path: 'cart',
-        loadChildren: () => import('../cart/cart.module').then( m => m.CartPageModule)
+        loadChildren: () => import('../cart/cart.module').then(m => m.CartPageModule)
       },
       {
         path: 'myaccount',
-        loadChildren: () => import('../myaccount/myaccount.module').then( m => m.MyaccountPageModule)
+        loadChildren: () => import('../myaccount/myaccount.module').then(m => m.MyaccountPageModule)
       },
       {
         path: 'tabs',
-        loadChildren: () => import('../tabs/tabs.module').then( m => m.TabsPageModule)
+        loadChildren: () => import('../tabs/tabs.module').then(m => m.TabsPageModule)
       },
     ]
   },
@@ -54,4 +46,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

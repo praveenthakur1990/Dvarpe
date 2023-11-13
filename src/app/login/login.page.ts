@@ -13,8 +13,8 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  redirectToOnboarding() {
-    this.route.navigate(['tabs/onboarding']);
+  redirectToOTP() {
+    this.route.navigate(['/otp']);
   }
 
 }

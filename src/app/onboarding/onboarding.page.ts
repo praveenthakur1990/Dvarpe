@@ -13,7 +13,7 @@ export class OnboardingPage implements OnInit {
   ngOnInit() {
   }
   
-  redirectToHome(){
-    this.route.navigate(['/home']);
+  redirectToHome(){    
+    this.route.navigate(['/tabs/home'])
   }
 }
