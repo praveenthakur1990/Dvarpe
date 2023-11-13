@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category.page.scss'],
 })
 export class CategoryPage implements OnInit {
-
+  public segment: string = "vegetables";
   constructor() { }
 
   ngOnInit() {
   }
 
+  
+  segmentChanged(ev: any) {
+    this.segment = ev.detail.value;
+  }
 }

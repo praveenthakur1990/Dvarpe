@@ -18,7 +18,7 @@ export class TabsPage implements OnInit {
   }
 
   redirectToCategoryPage(){
-    this.route.navigate(['/category']);
+    this.route.navigate(['tabs/category']);
   }
 
   redirectToCartPage(){
