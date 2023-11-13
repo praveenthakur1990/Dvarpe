@@ -1,0 +1,7 @@
+{
+  "name": "dvarpe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
