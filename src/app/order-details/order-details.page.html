@@ -1,0 +1,98 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Order Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" defaultHref="tabs/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <div class="order-status current-staus">
+      <div>Estimated delivery time: <br> <b>Dec 12th, 2022 at 10:00pm</b></div>
+      <ion-icon name="cart"></ion-icon>
+    </div>
+
+    <div class="cartHeading">
+      <h1>Your Order</h1>
+      <span>3 Item</span>
+    </div>
+    
+    <div class="cartProductList">
+      <div class="cartProductWrapper">
+        <div>
+          <img src="../../assets/img/image-1.png" alt="image"/>
+        </div>
+        <div>
+          <div class="productPrice">$36.00</div>
+          <div class="productName">Lettuce</div>
+          <div class="productVariant">1kg</div> 
+          <div class="cartQtyAmount">
+            <div class="qtyCount">2</div>
+            <div class="totalAmount">$55.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="cartProductWrapper">
+        <div>
+          <img src="../../assets/img/image-1.png" alt="image"/>
+        </div>
+        <div>
+          <div class="productPrice">$36.00</div>
+          <div class="productName">Lettuce</div>
+          <div class="productVariant">1kg</div> 
+          <div class="cartQtyAmount">
+            <div class="qtyCount">2</div>
+            <div class="totalAmount">$55.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="cartProductWrapper">
+        <div>
+          <img src="../../assets/img/image-1.png" alt="image"/>
+        </div>
+        <div>
+          <div class="productPrice">$36.00</div>
+          <div class="productName">Lettuce</div>
+          <div class="productVariant">1kg</div> 
+          <div class="cartQtyAmount">
+            <div class="qtyCount">2</div>
+            <div class="totalAmount">$55.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="orderAmountList">
+    <div class="amountRow">
+      <div>Sub Total</div><div>$35.90</div>
+    </div>
+    <div class="amountRow">
+      <div>Delivery Charges</div><div>FREE</div>
+    </div>
+    <div class="amountRow">
+      <div>GST Tax</div><div>$15.00</div>
+    </div>
+    <div class="totalAmountRow">
+      <div>Total Amount</div><div>$83.00</div>
+    </div>
+  </div>
+
+  <div class="orderDetailsRow ion-padding-bottom ion-margin-bottom">
+    <div class="orderRow">
+      <div>Order Number</div><div>3590</div>
+    </div>
+    <div class="orderRow">
+      <div>Order Date</div><div>30 Nov, 2022 at 10:00PM</div>
+    </div>
+    <div class="orderRow">
+      <div>Payment Mode</div><div>Paid: Using PhonePe</div>
+    </div>
+    <div class="orderRow">
+      <div>Paid: Using PhonePe</div><div>Flat No. 234, 5th floor, Hira Building, Lucknow, UP, 23456</div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,20 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+  <div class="order-sucess-top">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <h2>Order Placed!</h2>
+    <p>Your order was placed successfully. <br>For more details check Delivery Status <br>under order tab</p>
+    <ion-button expand="block">View Order Details</ion-button>
+  </div>
 
-  <div class="ion-padding">
-    
+  <div class="order-sucess-bottom ion-padding ion-margin-bottom">
     <div class="dailyDeals">
-      <h1>Today's Best Deal</h1>
+      <h1>Item List</h1>
+      <span>View All</span>
     </div>
-
+  
     <div class="dailyDealList">
       <div class="productWrapper">
         <div class="ion-text-center">
@@ -87,38 +84,4 @@
 
   </div>
 
-  <!--category-->
-  <div class="ion-padding">
-    
-    <div class="dailyDeals">
-      <h1>Shop by Category</h1>
-    </div>
-
-    <div class="productCategory">
-      <div>
-        <img src="../../assets/img/image-1.png" alt="image"/>
-        <h2>Green Vegies</h2>
-      </div>
-      <div>
-        <img src="../../assets/img/image-2.png" alt="image"/>
-        <h2>Fruits</h2>
-      </div>
-      <div>
-        <img src="../../assets/img/image-3.png" alt="image"/>
-        <h2>Dairy</h2>
-      </div>
-      <div>
-        <img src="../../assets/img/image-4.png" alt="image"/>
-        <h2>Vegetables</h2>
-      </div>
-      <div>
-        <img src="../../assets/img/image-1.png" alt="image"/>
-        <h2>Bakery</h2>
-      </div>
-      <div>
-        <img src="../../assets/img/image-3.png" alt="image"/>
-        <h2>Herbs</h2>
-      </div>
-    </div>
-  </div>
 </ion-content>

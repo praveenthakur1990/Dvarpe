@@ -1,10 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>On Boarding</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <h3>Onboarding Page</h3>
-  <ion-button (click)="redirectToHome()">Redirect To Home</ion-button> 
+  <div class="pageWrapper">
+    <div class="topWrapper"></div>
+    <div class="bottomWrapper">
+      <div class="pageHeading ion-padding">
+        <h1>Let’s<br>Get <span>Started!</span></h1>
+      </div>
+  
+      <div class="pageRow ion-padding-horizontal">
+        <ion-select placeholder="Select City" class="ion-margin-bottom">
+          <ion-select-option value="apples">City Name-1</ion-select-option>
+          <ion-select-option value="oranges">City Name-3</ion-select-option>
+          <ion-select-option value="bananas">City Name-3</ion-select-option>
+        </ion-select>
+        <ion-select placeholder="Select Local Area" class="ion-margin-bottom">
+          <ion-select-option value="apples">Sector-10</ion-select-option>
+          <ion-select-option value="oranges">Sector-11</ion-select-option>
+          <ion-select-option value="bananas">Sector-12</ion-select-option>
+        </ion-select>
+        <ion-select placeholder="Select Building/Apartment" class="">
+          <ion-select-option value="apples">Amaatra Homes</ion-select-option>
+          <ion-select-option value="oranges">Amaatra Homes</ion-select-option>
+          <ion-select-option value="bananas">Mahagun Mantraa</ion-select-option>
+        </ion-select>
+        <div class="ion-padding-top">
+          <h3>Address</h3>
+          <ion-input type="number" placeholder="Enter Flat/House Number" class="ion-margin-bottom"></ion-input>
+          <ion-select placeholder="Select Floor">
+            <ion-select-option value="apples">1 Floor</ion-select-option>
+            <ion-select-option value="oranges">2 Floor</ion-select-option>
+            <ion-select-option value="bananas">3 Floor</ion-select-option>
+          </ion-select>
+          <ion-button expand="block" class="ion-padding-bottom ion-margin-top">Continue</ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

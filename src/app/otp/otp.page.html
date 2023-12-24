@@ -1,10 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>OTP</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <h3>OTP Page</h3> 
-  <ion-button (click)="redirectToOnboarding()">Redirect To Onboarding</ion-button>
+
+  <div class="pageWrapper ion-padding">
+    <div class="pageRow ion-margin-vertical">
+      <p>We have sent a verification code to<br><b>+91 9816810805</b></p>
+      <div class="otpWrapper ion-margin-bottom ion-padding-bottom">
+        <div>
+          <ion-input type="number" class="loginInput"></ion-input>
+        </div>
+        <div>
+          <ion-input type="number" class="loginInput"></ion-input>
+        </div>
+        <div>
+          <ion-input type="number" class="loginInput"></ion-input>
+        </div>
+        <div>
+          <ion-input type="number" class="loginInput"></ion-input>
+        </div>
+      </div>
+      <ion-button expand="block">Continue</ion-button>
+    </div>
+  </div>
 </ion-content>

@@ -1,10 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <h3>Welcome to Login Page</h3> 
-  <ion-button (click)="redirectToOTP()">Login</ion-button>
+  <div class="pageWrapper">
+    <div class="topWrapper"></div>
+    <div class="bottomWrapper">
+      <div class="pageHeading">
+        <h1>Welcome</h1> 
+        <p>Login or Singup to continue</p>
+      </div>
+  
+      <div class="pageRow ion-padding-horizontal">
+        <ion-input type="number" placeholder="Enter Mobile Number" class="ion-padding-horizontal ion-margin-bottom"></ion-input>
+        <ion-button expand="block">Continue</ion-button>
+        <div class="contidionLabel">
+          By continuing you agree to our <br><span><a href="#">Terms of services</a><a href="">Privacy Policy</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

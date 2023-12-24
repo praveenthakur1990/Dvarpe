@@ -18,6 +18,18 @@ const routes: Routes = [
     path: 'onboarding',
     loadChildren: () => import('./onboarding/onboarding.module').then(m => m.OnboardingPageModule)
   },
+  {
+    path: 'orders',
+    loadChildren: () => import('./orders/orders.module').then( m => m.OrdersPageModule)
+  },
+  {
+    path: 'order-details',
+    loadChildren: () => import('./order-details/order-details.module').then( m => m.OrderDetailsPageModule)
+  },
+  {
+    path: 'order-sucess',
+    loadChildren: () => import('./order-sucess/order-sucess.module').then( m => m.OrderSucessPageModule)
+  },
 
 ];
 
